@@ -1,0 +1,30 @@
+Memberhip of Triangle
+
+a,b,c= int(input("A: ")),int(input("B: ")),int(input("C: "))
+x= int(("Enter the element: "))
+if(x<a or x>c):
+    print("Membership of %d is 0"%(x))
+elif(x>=a and x<b):
+    m=(x-a)/(b-a)
+    print("Membership of %d is %d"%(x,m) )
+elif(x==b):
+    print("Membership of %d is 0"%(x))
+else:
+    m=(c-a)/(c-b)
+    print("Membership of %d is %d"%(x,m))
+
+<<><><<<<<><<><><><><><><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<><<<
+Membership of trapizadual
+
+a,b,c,d= int(input("A: ")),int(input("B: ")),int(input("C: ")),int(input("D: "))
+x= int(input("Enter the element: "))
+if(x<a or x>d):
+    print("Membership of %d is 0"%(x))
+elif(x>=a and x<b):
+    m=(x-a)/(b-a)
+    print("Membership of %d is %.2f"%(x,m) )
+elif(x>=b and x<=c):
+    print("Membership of %d is 1"%(x))
+else:
+    m=(d-x)/(d-c)
+    print("Membership of %d is %d"%(x,m))
